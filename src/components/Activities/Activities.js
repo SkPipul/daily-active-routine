@@ -20,7 +20,7 @@ const Activities = () => {
     }
 
     return (
-        <div className='container activities-container'>
+        <div className='activities-container'>
             <div className='activities'>
                 {
                     activities.map(activity => <Activity
