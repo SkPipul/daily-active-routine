@@ -5,6 +5,7 @@ import './Activities.css'
 
 const Activities = () => {
     const [activities, setActivities] = useState([]);
+    const [list, setList] = useState([]);
 
     useEffect(() => {
         fetch('activity.json')
@@ -12,17 +13,25 @@ const Activities = () => {
         .then(data => setActivities(data))
     }, [])
 
+    const handleAddToList = (activity) => {
+        // console.log(activity);
+        const newList = [...list, activity];
+        setList(newList);
+    }
+
     return (
         <div className='container activities-container'>
             <div className='activities'>
                 {
                     activities.map(activity => <Activity
                     key={activity.id}
-                    activity={activity}></Activity>)
+                    activity={activity}
+                    handleAddToList={handleAddToList}
+                    ></Activity>)
                 }
             </div>
             <div className='cart-container'>
-                    <Cart></Cart>
+                    <Cart list={list}></Cart>
             </div>
         </div>
     );

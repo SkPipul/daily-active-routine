@@ -4,8 +4,8 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-            <h2 className='text-danger'><i class="fa-solid fa-chart-line text-primary"></i> Daily Active Routine</h2>
-            <h3 className='my-3'>Select Today's Activities</h3>
+            <h1 className='header-text'><i class="fa-solid fa-chart-line icon"></i> Daily Active Routine</h1>
+            <h2 className='heading'>Select Today's Activities</h2>
         </div>
     );
 };

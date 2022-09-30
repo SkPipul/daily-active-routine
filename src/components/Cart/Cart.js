@@ -1,7 +1,13 @@
 import React from 'react';
 import './Cart.css'
 
-const Cart = () => {
+const Cart = (props) => {
+    const {list} = props;
+
+    let totalTime = 0;
+    for(const activity of list){
+        totalTime = totalTime + activity.time;
+    }
     return (
         <div className='cart-container'>
             <div className='cart'>
@@ -13,7 +19,7 @@ const Cart = () => {
             </div>
             <div className="cart-info">
                 <div>
-                    <p><strong>60 kg</strong></p>
+                    <p><strong>60 </strong>kg</p>
                     <p><small>Weight</small></p>
                 </div>
                 <div>
@@ -21,7 +27,7 @@ const Cart = () => {
                     <p><small>Height</small></p>
                 </div>
                 <div>
-                    <p><strong>24 yrs</strong></p>
+                    <p><strong>24 </strong>yrs</p>
                     <p><small>Age</small></p>
                 </div>
             </div>
@@ -35,6 +41,16 @@ const Cart = () => {
                 <button className='btn-break'>40s</button>
                 <button className='btn-break'>50s</button>
             </div>
+            <div>
+                <h3>Activities Details</h3>
+            </div>
+            <div className="activities-details">
+                <h4>Total activities time: {totalTime}</h4>
+            </div>
+            <div className="activities-details">
+                <h4>Break Time: </h4>
+            </div>
+            <button className='btn-final'><p>Activity completed</p></button>
         </div>
     );
 };

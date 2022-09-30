@@ -2,6 +2,7 @@
     margin-right: 20px;
     position: sticky;
     top: 15px;
+    margin-top: -48px;
 }
 .cart{
     display: flex;
@@ -16,10 +17,15 @@
 .cart-info{
     display: flex;
     justify-content: space-between;
-    background-color: rgba(199, 189, 189, 0.811);
+    background-color: rgb(169, 186, 184);
     padding-right: 8px;
     padding-left: 8px;
     border-radius: 4px;
+}
+.break-container{
+    background-color: rgb(169, 186, 184);
+    padding: 12px;
+    border-radius: 6px;
 }
 .btn-break{
     border: none;
@@ -29,4 +35,22 @@
 }
 .btn-break:hover{
     background-color: rgb(187, 232, 228);
+}
+.activities-details{
+    background-color: rgb(169, 186, 184);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+.btn-final{
+    width: 100%;
+    margin-top: 7px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+    background-color: rgba(118, 118, 222, 0.866);
+}
+.btn-final:hover{
+    background-color: rgb(18, 104, 97);
 }
