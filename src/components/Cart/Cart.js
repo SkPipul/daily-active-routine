@@ -49,7 +49,7 @@ const Cart = (props) => {
                 <h3>Activities Details</h3>
             </div>
             <div className="activities-details">
-                <h6>Total activities time: {totalTime} hr</h6>
+                <h4>Total activities time: {totalTime} hr</h4>
             </div>
             <div className="activities-details">
                 <h4>Break Time: </h4>

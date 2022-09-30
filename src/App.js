@@ -1,13 +1,13 @@
 import './App.css';
-import Accordion from './components/Accordion/Accordion';
 import Activities from './components/Activities/Activities';
 import Header from './components/Header/Header';
+import Question from './components/Question/Question';
 function App() {
   return (
     <div>
       <Header></Header>
       <Activities></Activities>
-      <Accordion></Accordion>
+      <Question></Question>
     </div>
   );
 }
