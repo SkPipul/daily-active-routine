@@ -1,4 +1,5 @@
 import React, {} from 'react';
+import Break from '../Break/Break';
 import Toast from '../Toast/Toast';
 import './Cart.css'
 
@@ -10,8 +11,7 @@ const Cart = (props) => {
     for(const activity of list){
         totalTime = totalTime + activity.time;
     }
-    const addToBreak = (event) =>{
-    }
+    
     return (
         <div className='cart-container'>
             <div className='cart'>
@@ -36,24 +36,16 @@ const Cart = (props) => {
                 </div>
             </div>
             <div>
-                <h4 className='mb-4'>Add a break</h4>
-            </div>
-            <div className="break-container">
-                <button onClick={(event)=>addToBreak(event)} className='btn-break'>10s</button>
-                <button onClick={addToBreak(20)} className='btn-break'>20s</button>
-                <button onClick={addToBreak(30)} className='btn-break'>30s</button>
-                <button onClick={addToBreak} className='btn-break'>40s</button>
-                <button onClick={addToBreak} className='btn-break'>50s</button>
+                <h4>Add a break</h4>
             </div>
             <div>
-                <h3>Activities Details</h3>
+                <Break breakTime={props.breakTime}></Break>
             </div>
+            
             <div className="activities-details">
                 <h4>Total activities time: {totalTime} hr</h4>
             </div>
-            <div className="activities-details">
-                <h4>Break Time: </h4>
-            </div>
+            
             <div>
                 <Toast></Toast>
             </div>

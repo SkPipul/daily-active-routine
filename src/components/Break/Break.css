@@ -1,0 +1,25 @@
+.break-container{
+    background-color: rgb(169, 186, 184);
+    padding: 7px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.btn-break{
+    border: none;
+    padding: 5px;
+    margin-right: 9px;
+    border-radius: 30px;
+}
+.btn-break:hover{
+    background-color: rgb(187, 232, 228);
+}
+.activities-details{
+    background-color: rgb(169, 186, 184);
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.text-detail{
+    margin: 10px;
+}
