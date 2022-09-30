@@ -13,9 +13,8 @@ const Activities = () => {
     }, [])
 
     return (
-        <div className='container'>
-            <h3>Select Today's Activities</h3>
-            <div className='activities-container'>
+        <div className='container activities-container'>
+            <div className='activities'>
                 {
                     activities.map(activity => <Activity
                     key={activity.id}
@@ -23,7 +22,7 @@ const Activities = () => {
                 }
             </div>
             <div className='cart-container'>
-                <Cart></Cart>
+                    <Cart></Cart>
             </div>
         </div>
     );
