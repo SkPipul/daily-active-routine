@@ -6,7 +6,6 @@ const Break = () => {
     const [breakTime, setBreakTime] = useState(getLocalStorage());
     const addToBreak = (event) =>{
         setBreakTime(event.target.innerText);
-        // console.log(breakTime);
         
     }
     return (
