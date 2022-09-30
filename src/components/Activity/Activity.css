@@ -1,6 +1,6 @@
 .activity{
     width: 280px;
-    height: 300px;
+    height: 330px;
     border: 1px solid #95A0A7;
     border-radius: 8px;
     position: relative;
@@ -9,7 +9,7 @@
     width: 260px;
     height: 160px;
     border-radius: 8px;
-    margin: 7px;
+    margin: 8px;
 }
 .info{
     margin: 0 15px;
