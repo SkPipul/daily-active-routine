@@ -1,4 +1,5 @@
 import './App.css';
+import Accordion from './components/Accordion/Accordion';
 import Activities from './components/Activities/Activities';
 import Header from './components/Header/Header';
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Header></Header>
       <Activities></Activities>
+      <Accordion></Accordion>
     </div>
   );
 }

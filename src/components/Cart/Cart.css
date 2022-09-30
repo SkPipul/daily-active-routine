@@ -21,11 +21,13 @@
     padding-right: 8px;
     padding-left: 8px;
     border-radius: 4px;
+    margin-bottom: 15px;
 }
 .break-container{
     background-color: rgb(169, 186, 184);
-    padding: 12px;
+    padding: 7px;
     border-radius: 6px;
+    margin-bottom: 15px;
 }
 .btn-break{
     border: none;

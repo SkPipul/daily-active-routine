@@ -36,7 +36,7 @@ const Cart = (props) => {
                 </div>
             </div>
             <div>
-                <h3>Add a break</h3>
+                <h4 className='mb-4'>Add a break</h4>
             </div>
             <div className="break-container">
                 <button onClick={(event)=>addToBreak(event)} className='btn-break'>10s</button>
@@ -49,7 +49,7 @@ const Cart = (props) => {
                 <h3>Activities Details</h3>
             </div>
             <div className="activities-details">
-                <h4>Total activities time: {totalTime} hr</h4>
+                <h6>Total activities time: {totalTime} hr</h6>
             </div>
             <div className="activities-details">
                 <h4>Break Time: </h4>
